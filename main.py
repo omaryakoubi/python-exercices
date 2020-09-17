@@ -6,11 +6,13 @@
 
 def numbers_divisible_by_7() :
     list = []
-    range_of_numbers = range(1999,3201)
+    range_of_numbers = range(2000,3201)
     for number in range_of_numbers :
         if (number % 7 == 0) and (number % 5 != 0): 
             list.append(str(number))
-            print(','.join(list))
+    print(','.join(list))
+
+
 
 
 # Question 2 :
@@ -46,8 +48,20 @@ def factorial(number) :
 
 def generate_dictionary(number):
     range_of_numbers = range(1, number + 1)
-    obj = {}
+    storage = {}
     for number in range_of_numbers:
-       obj[int(number)] =  int(number * number)
-       print(obj) 
+       storage[int(number)] =  int(number * number)
+    print(storage) 
 
+
+# Question 4 :
+# Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+# Suppose the following input is supplied to the program:
+# 34,67,55,33,12,98
+# Then, the output should be:
+# ['34', '67', '55', '33', '12', '98']
+# ('34', '67', '55', '33', '12', '98')
+
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+# tuple() method can convert list to tuple
