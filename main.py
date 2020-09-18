@@ -67,7 +67,7 @@ def generate_dictionary(number):
 
 #NEED TO REFACTOR THIS CODE 
 
-def generate_list_and_tuple(*sequence_of_numbers):
+def sequence_to_list_and_tuple(*sequence_of_numbers):
     list = []
     for number in sequence_of_numbers:
         list.append(str(number))
