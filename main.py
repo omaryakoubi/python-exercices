@@ -75,3 +75,26 @@ def sequence_to_list_and_tuple(*sequence_of_numbers):
     print(tuple(sequence_of_numbers))
     
 
+
+# Question 5 :
+# Define a class which has at least two methods:
+# getString: to get a string from console input
+# printString: to print the string in upper case.
+# Also please include simple test function to test the class methods.
+
+# Hints:
+# Use __init__ method to construct some parameters
+
+class User_input_class:
+    def __init__(self):
+        self.user_input = ""
+    
+    def get_string(self):
+        self.user_input = input('Write here: ')
+    
+    def print_string(self):
+        print (self.user_input.upper())
+
+test = User_input_class()
+test.get_string()
+test.print_string() 
