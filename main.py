@@ -10,7 +10,8 @@ def numbers_divisible_by_7() :
     for number in range_of_numbers :
         if (number % 7 == 0) and (number % 5 != 0): 
             list.append(str(number))
-    print(','.join(list))
+    return (','.join(list))
+
 
 
 # Question 2 :
@@ -49,7 +50,7 @@ def generate_dictionary(number):
     storage = {}
     for number in range_of_numbers:
        storage[int(number)] =  int(number * number)
-    print(storage) 
+    return storage 
 
 
 # Question 4 :
@@ -63,3 +64,14 @@ def generate_dictionary(number):
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # tuple() method can convert list to tuple
+
+#NEED TO REFACTOR THIS CODE 
+
+def generate_list_and_tuple(*sequence_of_numbers):
+    list = []
+    for number in sequence_of_numbers:
+        list.append(str(number))
+    print(list)
+    print(tuple(sequence_of_numbers))
+    
+
