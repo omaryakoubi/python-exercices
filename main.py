@@ -180,7 +180,7 @@ def test(*D):
 # bag,hello,without,world
 
 def sort_sequence_of_words():
-    sequence_of_words = input('please give sequance of words:').split(',')
+    sequence_of_words = input('please give sequance of words: ').split(',')
     sequence_of_words.sort()
     print(','.join(sequence_of_words))
 
@@ -188,3 +188,23 @@ def sort_sequence_of_words():
 #----------------------------------------#
 
 #----------------------------------------#
+
+
+# Question 9:
+
+# Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+# Suppose the following input is supplied to the program:
+# Hello world
+# Practice makes perfect
+# Then, the output should be:
+# HELLO WORLD
+# PRACTICE MAKES PERFECT
+
+def to_upper_case():
+    sequence = input('please enter a sequence of characters: ')
+    if sequence:
+        return (sequence.upper())
+    else :
+        return 'nothing can be capitalazed no sequence of characters detected!'
+    
+print(to_upper_case())
