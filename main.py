@@ -13,6 +13,10 @@ def numbers_divisible_by_7() :
     return (','.join(list))
 
 
+#----------------------------------------#
+
+#----------------------------------------#
+
 
 # Question 2 :
 
@@ -33,6 +37,11 @@ def factorial(number) :
         return number * factorial(number - 1)
 
 
+#----------------------------------------#
+
+#----------------------------------------#
+
+
 # Question 3
 
 # With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
@@ -51,6 +60,11 @@ def generate_dictionary(number):
     for number in range_of_numbers:
        storage[int(number)] =  int(number * number)
     return storage 
+
+
+#----------------------------------------#
+
+#----------------------------------------#
 
 
 # Question 4 :
@@ -75,6 +89,10 @@ def sequence_to_list_and_tuple(*sequence_of_numbers):
     print(list)
     print(tuple(sequence_of_numbers))
     
+
+#----------------------------------------#
+
+#----------------------------------------#
 
 
 # Question 5 :
@@ -102,6 +120,11 @@ class User_input_class:
 # test.print_string() 
 
 
+#----------------------------------------#
+
+#----------------------------------------#
+
+
 # Question 6 :
 
 # Write a program that calculates and prints the value according to the given formula:
@@ -126,5 +149,42 @@ def test(*D):
     H = 30
     return 2 * C * D / H
 
-print(test(100,150,180))
 
+#----------------------------------------#
+
+#----------------------------------------#
+
+
+# Question 7
+
+# Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. 
+# The element value in the i-th row and j-th column of the array should be i*j.
+# Note: i=0,1.., X-1; j=0,1,¡­Y-1.
+# Example
+# Suppose the following inputs are given to the program: 3,5
+# Then, the output of the program should be:
+# [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+
+
+#----------------------------------------#
+
+#----------------------------------------#
+
+
+# Question 8:
+
+# Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+# Suppose the following input is supplied to the program:
+# without,hello,bag,world
+# Then, the output should be:
+# bag,hello,without,world
+
+def sort_sequence_of_words():
+    sequence_of_words = input('please give sequance of words:').split(',')
+    sequence_of_words.sort()
+    print(','.join(sequence_of_words))
+
+
+#----------------------------------------#
+
+#----------------------------------------#
